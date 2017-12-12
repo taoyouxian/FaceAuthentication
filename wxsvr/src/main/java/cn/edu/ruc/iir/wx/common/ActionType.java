@@ -1,0 +1,18 @@
+package cn.edu.ruc.iir.wx.common;
+
+/**
+ * @version V1.0
+ * @Package: cn.edu.hhuc.si.common
+ * @ClassName: ActionType
+ * @Description: Contain action types
+ * @author: Tao
+ * @date: Create in 2017-09-07 10:06
+ **/
+public enum ActionType {
+    acGetWxJsConfig,
+    acWxDownMedia,
+    acExecuteSql,
+    acGetTable,
+    acGetDs,
+    acGetPageTable
+}

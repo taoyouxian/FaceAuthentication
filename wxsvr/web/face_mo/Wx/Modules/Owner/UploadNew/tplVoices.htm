@@ -1,0 +1,18 @@
+﻿<style>
+    .divVoicesFrame{ padding:0px 20px}    
+    .divVoicesFrame ul{ padding:0px; list-style:none; }
+    .divVoicesFrame ul li{ float:right; padding-right:10px; border:0px}
+    
+</style>
+<div class="divVoicesFrame">
+    <ul class="clearfix">
+    <%
+        for( var i=0;i< tplData.length;i++){
+            var aItem = tplData[i];
+    %>
+        <li>
+            <a href="javascript:UploadNew.PlayVoice(<%=i%>)"><i class="fa fa-volume-up"></i></a>
+        </li>
+    <%} %>
+    </ul>
+</div>

@@ -1,0 +1,21 @@
+﻿<style>
+    .divDirItem{}
+</style>
+ <%
+    for( var i=0;i< tplData.length;i++){
+        var aItem = tplData[i];
+ %>
+    <div class="col-xs-6" style="padding:5px; padding-left:20px">
+    <%
+        if( aItem.F_Checked=="1"){
+    %>
+        <div class="divDirItem text-blue text-bold" onclick="UploadNew.OnCheckKeyword(0, <%=i %>)"> 
+            <i class="fa  fa-toggle-on"></i> <%=aItem.F_Keyword %>
+         </div>
+    <%} else { %>
+        <div class="divDirItem" onclick="UploadNew.OnCheckKeyword(1, <%=i %>)"> 
+            <i class="fa  fa-toggle-off"></i> <%=aItem.F_Keyword %>
+         </div>
+    <%} %>
+    </div>
+ <%} %>
